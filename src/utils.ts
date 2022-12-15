@@ -75,7 +75,7 @@ export function checkBigIntArrayInField(arr: bigint[]): boolean {
 
 export async function poseidonHash(input: number[] | bigint[] | Uint8Array): Promise<bigint> {
   const poseidon = await poseidonLib.buildPoseidon();
-  return poseidon(poseidon(input));
+  return poseidon(input);
 }
 
 export class Poseidon {
@@ -86,6 +86,6 @@ export class Poseidon {
   }
 
   static hash(input: number[] | bigint[] | Uint8Array): bigint {
-    return Poseidon._poseidon(Poseidon._poseidon(input));
+    return Poseidon._poseidon(input);
   }
 }

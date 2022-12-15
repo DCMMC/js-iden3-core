@@ -121,7 +121,7 @@ function poseidonHash(input) {
                 case 0: return [4 /*yield*/, poseidonLib.buildPoseidon()];
                 case 1:
                     poseidon = _a.sent();
-                    return [2 /*return*/, poseidon(poseidon(input))];
+                    return [2 /*return*/, poseidon(input)];
             }
         });
     });
@@ -146,7 +146,7 @@ var Poseidon = /** @class */ (function () {
         });
     };
     Poseidon.hash = function (input) {
-        return Poseidon._poseidon(Poseidon._poseidon(input));
+        return Poseidon._poseidon(input);
     };
     return Poseidon;
 }());
