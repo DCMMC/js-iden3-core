@@ -73,6 +73,7 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
+    "@types/node": "^18.14.6",
     "assert": "^2.0.0",
     "base58-js": "^1.0.4",
     "browserify": "^17.0.0",
